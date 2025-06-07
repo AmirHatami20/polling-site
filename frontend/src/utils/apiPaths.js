@@ -1,4 +1,5 @@
-// utils/apiPaths.js
+export const BASE_URL = "https://polling-site-zdxl.onrender.com"
+
 export const API_PATHS = {
     AUTH: {
         LOGIN: "/auth/login",
