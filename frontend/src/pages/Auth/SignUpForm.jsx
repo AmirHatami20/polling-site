@@ -19,6 +19,7 @@ function SignUpForm() {
     });
 
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const {updateUser} = useContext(UserContext);
     const navigate = useNavigate();
@@ -33,6 +34,7 @@ function SignUpForm() {
 
     const onSubmitHandler = async (event) => {
         event.preventDefault();
+        setLoading(true);
 
         if (!data.fullName) {
             setError("لطفا نام و نام خانوادگی خود را وارد کنید!");
@@ -81,6 +83,8 @@ function SignUpForm() {
             } else {
                 setError("مشکلی پیش آمده است. لطفا مجددا تکرار کنید!");
             }
+        } finally {
+            setLoading(false);
         }
     }
 
@@ -137,7 +141,7 @@ function SignUpForm() {
                     {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
 
                     <button className="btn-primary">
-                        ثبت نام
+                        {loading ? "در حال پردازش..." : "ثبت نام"}
                     </button>
 
                     <p className="text-[13px] text-slate-800 mt-3">
