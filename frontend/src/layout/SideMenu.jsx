@@ -1,8 +1,8 @@
 import React, {useContext, useState} from 'react';
-import {SIDE_MENU_DATA} from "../../utils/data.js";
+import {SIDE_MENU_DATA} from "../utils/data.js";
 import {useNavigate} from "react-router-dom";
-import {UserContext} from "../../context/UserContext.jsx";
-import Modal from "../modal/modal.jsx";
+import {UserContext} from "../context/UserContext.jsx";
+import Modal from "../components/modal/modal.jsx";
 
 function SideMenu({activeMenu}) {
     const [showLogoutModal, setShowLogoutModal] = useState(false);

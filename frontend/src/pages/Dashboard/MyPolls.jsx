@@ -1,9 +1,9 @@
 import {useContext, useEffect, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 
-import DashboardLayout from "../../components/layout/DashboardLayout.jsx";
+import DashboardLayout from "../../layout/DashboardLayout.jsx";
 import useUserAuth from "../../hooks/useUserAuth.jsx";
-import HeaderWithFilter from "../../components/layout/HeaderWithFilter.jsx";
+import HeaderWithFilter from "../../layout/HeaderWithFilter.jsx";
 
 import axiosInstance from "../../utils/axiosInstance.js";
 

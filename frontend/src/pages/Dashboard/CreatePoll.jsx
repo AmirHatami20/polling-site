@@ -1,5 +1,5 @@
 import {useContext, useState} from "react";
-import DashboardLayout from "../../components/layout/DashboardLayout.jsx";
+import DashboardLayout from "../../layout/DashboardLayout.jsx";
 import useUserAuth from "../../hooks/useUserAuth.jsx";
 import {POLL_TYPE} from "../../utils/data.js";
 import OptionInput from "../../components/input/OptionInput.jsx";

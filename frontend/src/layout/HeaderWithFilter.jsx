@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {IoCloseOutline, IoFilterOutline} from "react-icons/io5";
-import {POLL_TYPE} from "../../utils/data.js";
+import {POLL_TYPE} from "../utils/data.js";
 
 function HeaderWithFilter({title, filterType, setFilterType}) {
     const [open, setOpen] = useState(false);

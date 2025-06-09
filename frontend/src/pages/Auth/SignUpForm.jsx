@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import AuthLayout from "../../components/layout/AuthLayout.jsx";
+import AuthLayout from "../../layout/AuthLayout.jsx";
 import AuthInput from "../../components/input/AuthInput.jsx";
 import {Link, useNavigate} from "react-router-dom";
 import ProfilePhotoSelector from "../../components/input/ProfilePhotoSelector.jsx";

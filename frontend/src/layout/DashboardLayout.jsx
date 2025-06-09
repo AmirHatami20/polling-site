@@ -1,15 +1,15 @@
 import React, {useContext} from 'react';
 import Navbar from "./Navbar.jsx";
 import SideMenu from "./SideMenu.jsx";
-import UserDetailsCard from "../cards/UserDetailsCard.jsx";
-import {UserContext} from "../../context/UserContext.jsx";
+import UserDetailsCard from "../components/cards/UserDetailsCard.jsx";
+import {UserContext} from "../context/UserContext.jsx";
 import TreadingPolls from "./TreadingPolls.jsx";
 
 function DashboardLayout({children, activeMenu, stats, showStats}) {
     const {user} = useContext(UserContext);
 
     return (
-        <div>
+        <div className="container mx-auto">
             <Navbar activeMenu={activeMenu}/>
             {user && (
                 <div className="flex">
